@@ -45,4 +45,5 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
     // AndroidX Lifecycle
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.6'
 }
