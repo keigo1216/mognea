@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
             moleInit() //初期化
             mTimeText?.text = "Score:" + mScor //スコアを表示
             mScor = 0 //スコアの初期化
+            gameStartBt.isEnabled = true //startボタンを押せるようにする
         }
 
     }
@@ -116,7 +117,8 @@ class MainActivity : AppCompatActivity() {
 
         //スタートボタンが押されたらゲームスタート
         gameStartBt.setOnClickListener{
-            gameStart()
+            gameStart() //ゲームスタート
+            gameStartBt.isEnabled = false //ボタンを押せなくする
         }
     }
 
